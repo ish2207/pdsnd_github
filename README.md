@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on 20th July,2020.
 
 ### Project Title
-Replace the Project Title
+Project_github
 
 ### Description
-Describe what your project is about and what it does
+This project is all about version control.This project includes makin commits and repositories.
 
 ### Files used
-Include the files used
+bikeshare.py, README.md,.gitignore files
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+this project was forked from https://github.com/ish2207/pdsnd_github
 
