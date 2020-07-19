@@ -17,7 +17,8 @@ def common_start_hour(df):
     df['hour'] = df['Start Time'].dt.hour
     popular_hour=df['hour'].mode()[0]
     print('Most Popular Start Hour:',popular_hour)
-def filter_day():
+def filter_day():"""Return a valid input from the user given an array of possible answers.
+    """
     days_option=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
     while True: 
         day =input('\nWhich day ? Choose sunday, monday, tuesday, wednesday, thursday, friday or saturday\n') 
@@ -148,6 +149,7 @@ def main():
             continue
 
 def user_stats(df,city):
+    """Ask user to specify city(ies) and filters, month(s) and weekday(s).
     print('\nCalculating User Stats...\n')
     start_time = time.time()
     user_types = df['User Type'].value_counts()
