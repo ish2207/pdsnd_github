@@ -96,6 +96,8 @@ def time_stats(df, month, day):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def station_stats(df):
+     """Display statistics on the most popular stations and trip."""
+
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     popular_start_station=df['Start Station'].mode()[0]
@@ -147,7 +149,7 @@ def main():
         elif restart =='yes':
             continue
 
-def user_stats(df,city):
+def user_stats(df,city):"""Display statistics on the most frequent times of travel."""
     print('\nCalculating User Stats...\n')
     start_time = time.time()
     user_types = df['User Type'].value_counts()
