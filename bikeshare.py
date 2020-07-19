@@ -97,6 +97,8 @@ def time_stats(df, month, day):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def station_stats(df):
+     """Display statistics on the most popular stations and trip."""
+
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     popular_start_station=df['Start Station'].mode()[0]
